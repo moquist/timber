@@ -9,5 +9,7 @@
 
   :pedantic? :warn
 
+  :plugins [[lein-cloverage "1.0.2"]]
+
   :profiles {:dev {:dependencies [[org.clojure/tools.namespace "0.2.4"]]
                    :source-paths ["dev"]}})
