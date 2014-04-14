@@ -1,4 +1,6 @@
-# Timber [![Build Status](http://img.shields.io/travis/vlacs/timber/master.svg)](https://travis-ci.org/vlacs/timber?branch=master) [![Coverage](http://img.shields.io/coveralls/vlacs/timber/master.svg)](http://coveralls.io/r/vlacs/timber)
+# Timber [![Build Status](http://img.shields.io/travis/vlacs/timber/testing.svg)](https://travis-ci.org/vlacs/timber?branch=testing) [![Coverage](http://img.shields.io/coveralls/vlacs/timber/testing.svg)](http://coveralls.io/r/vlacs/timber)
+
+THIS IS THE TESTING BRANCH!
 
 TODO: Brief description
 
