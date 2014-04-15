@@ -27,6 +27,7 @@
   select/js-asset (asset/transform-script-src asset-uri-path)
   select/main-menu (html/content main-menu)
   select/user-menu (html/content user-menu)
+  select/user-name (html/content user-name)
   select/content (html/content page-content)
   
   select/link-template nil
