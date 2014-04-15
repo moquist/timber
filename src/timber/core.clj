@@ -1,38 +1,33 @@
 (ns timber.core
-  (:require [net.cgrand.enlive-html :as html]))
+  (:require [net.cgrand.enlive-html :as html]
+            [timber.selectors :as select]
+            [timber.assets :as asset]))
 
-(def title-selector [[:title]])
+(html/defsnippet main-menu
+  "timber/templates/base.html"
+  select/main-menu
+  [menu-items]
+  [:li] (html/clone-for [{:keys [menu-name menu-url]} menu-items]
+                        [:li :a] (html/content menu-name)
+                        [:li :a] (html/set-attr :href menu-url)))
 
-(def link-asset-selector [[:link (html/attr? :asset)]])
-(def js-asset-selector [[:script (html/attr? :asset)]])
+(html/defsnippet user-menu
+  "timber/templates/base.html"
+  select/user-menu
+  [menu-items]
+  [:li] (html/clone-for [{:keys [menu-name menu-url]} menu-items]
+                        [:li :a] (html/content menu-name)
+                        [:li :a] (html/set-attr :href menu-url)))
 
-(def main-menu-selector [[:ul#main-menu]])
-(def side-menu-selector [[:ul#side-menu]])
-
-(def link-template-selector [[:link (html/attr? :template)]])
-(def script-template-selector [[:script (html/attr? :template)]])
-
-(def content-selector [[:div#content]])
-
-(defn default-transformations
-  [request]
-  {content-selector [(html/content "foo")]})
-
-(defn template
-  [request selector-map]
-  (let [merged-map (merge-with #(conj %1 %2) (default-transformations request) selector-map)
-        ;;;transform-map (into {} (map #([(first %1) (apply html/do-> (second %1))]) merged-map))
-        get-selector (partial get merged-map)
-        ]
-    (prn merged-map)
-    (html/template "timber/templates/base.html"
-                   [get-selector]
-                   title-selector (get-selector title-selector)
-                   link-asset-selector (get-selector link-asset-selector)
-                   js-asset-selector (get-selector js-asset-selector)
-                   main-menu-selector (get-selector main-menu-selector)
-                   side-menu-selector (get-selector side-menu-selector)
-                   link-template-selector (get-selector link-template-selector)
-                   script-template-selector (get-selector script-template-selector)
-                   content-selector (get-selector content-selector))))
-
+(html/deftemplate
+  base-page
+  "timber/templates/base.html"
+  [{:keys [page-name asset-uri-path user-name main-menu user-menu page-content] :as opts}]
+  select/link-asset (asset/transform-link asset-uri-path)
+  select/js-asset (asset/transform-script-src asset-uri-path)
+  select/main-menu (html/content main-menu)
+  select/user-menu (html/content user-menu)
+  select/content (html/content page-content)
+  
+  select/link-template nil
+  select/script-template nil)

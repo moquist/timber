@@ -10,7 +10,8 @@
    [clojure.set :as set]
    [clojure.string :as str]
    [clojure.test :as test]
-   [clojure.tools.namespace.repl :refer (refresh refresh-all)]))
+   [clojure.tools.namespace.repl :refer (refresh refresh-all)]
+   [net.cgrand.enlive-html :as html]))
 
 ;; There isnt' anything to start or stop
 ;;  in Timber since it is a templating lib.

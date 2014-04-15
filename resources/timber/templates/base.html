@@ -1,97 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
 
-        <title>Page Title</title>
+    <link asset="true" href="../public/css/bootstrap.min.css" rel="stylesheet">
+    <link asset="true" href="../public/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link asset="true" href="../public/css/plugins/select/select-theme-default.css" rel="stylesheet">
+    <link asset="true" href="../public/css/timber.css" rel="stylesheet">
+    <!-- Link tag to a stylesheet template. -->
+    <link template="true" rel="stylesheet" href="">
+  </head>
 
-        <!-- Core CSS - Include with every page -->
-        <link asset="true" href="../public/css/bootstrap.min.css" rel="stylesheet">
-        <link asset="true" href="../public/font-awesome/css/font-awesome.css" rel="stylesheet">
-
-        <!-- Page-Level Plugin CSS -->
-        <link asset="true" href="../public/css/plugins/select/select-theme-default.css" rel="stylesheet">
-
-        <!-- Traveler CSS - Include with every page -->
-        <link asset="true" href="../public/css/timber.css" rel="stylesheet">
-
-        <!-- Can we do this without breaking stuff? -->
-        <link template="true" href="">
-    </head>
-    <body>
-        <div id="wrapper">
-            <nav id="top-nav" class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a id="brand" class="navbar-brand" href="dashboard.html">VLACS Traveler</a>
-                </div>
-                <!-- /.navbar-header -->
-                <ul class="nav navbar-top-links navbar-right">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul
-                          id="main-menu"
-                          class="dropdown-menu dropdown-user">
-                            <li><a href="#"><i class="fa fa-user fa-fw"></i> My Account</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                            </li>
-                        </ul>
-                        <!-- /.dropdown-user -->
-                    </li>
-                    <!-- /.dropdown -->
-                </ul>
-                <!-- /.navbar-top-links -->
-            </nav>
-            <!-- /.navbar-static-top -->
-            <nav id="side-nav" class="navbar-default navbar-static-side" role="navigation">
-                <div class="sidebar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="/users"><i class="fa fa-user fa-fw"></i> Users</a>
-                        </li>
-                        <li>
-                            <a href="/system"><i class="fa fa-cog fa-fw"></i> System</a>
-                        </li>
-                    </ul>
-                    <!-- /#side-menu -->
-                </div>
-                <!-- /.sidebar-collapse -->
-            </nav>
-            <!-- /.navbar-static-side -->
-            <div id="page-wrapper">
-              <div id="content">
-                This is where the content should be loaded
-              </div>
-          </div>
-            <!-- /#page-wrapper -->
+  <body>
+    <div id="wrapper">
+      <nav id="top-nav" class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+      <div class="navbar-header">
+        <a id="brand" class="navbar-brand" href="#">Timber Template</a>
+      </div>
+      <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+        <a id="user-menu-toggle" class="dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-caret-down"></i></a>
+        <ul id="user-account-menu" class="dropdown-menu dropdown-user">
+          <li><a href="#">Account menu item</a></li>
+          <li class="divider"></li>
+          <!-- <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a> -->
+          </li>
+        </ul>
+        </li>
+      </ul>
+      </nav>
+      <nav id="main-menu" class="navbar-default navbar-static-side" role="navigation">
+      <div class="sidebar-collapse">
+        <ul class="nav" id="main-menu-list">
+          <li><a href="#">Standard link</a></li>
+        </ul>
+      </div>
+      </nav>
+      <div id="page-wrapper">
+        <div id="content">
+          This is where the content should be loaded
         </div>
-        <!-- /#wrapper -->
-        <!--JavaScript -->
-        <script asset="true" src="../public/js/angular.min.js"></script>
-        <script asset="true" src="../public/js/jquery-1.10.2.js"></script>
-        <script asset="true" src="../public/js/bootstrap.min.js"></script>
-        <script asset="true" src="../public/js/traveler.js"></script>
-        <!--JavaScript Plugins -->
-        <script asset="true" src="../public/js/plugins/select/select.min.js"></script>
-
-        <script type="text/javascript">
-            Select.init({selector: '.nice-select'});
-        </script>
-
-        <!-- Template script tag to use for adding scripts. -->
-        <script template="true" src=""></script>
-    </body>
+      </div>
+    </div>
+    <script asset="true" src="../public/js/angular.min.js"></script>
+    <script asset="true" src="../public/js/jquery-1.10.2.js"></script>
+    <script asset="true" src="../public/js/bootstrap.min.js"></script>
+    <!--JavaScript Plugins -->
+    <script asset="true" src="../public/js/plugins/select/select.min.js"></script>
+    <script type="text/javascript">Select.init({selector: '.nice-select'});</script>
+    <!-- Template script tag to use for adding scripts. -->
+    <script template="true" src=""></script>
+  </body>
 </html>
