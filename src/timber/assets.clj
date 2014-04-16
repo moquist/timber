@@ -5,7 +5,7 @@
   [public-uri match uri-attr]
     (conj public-uri
           (second
-            (h-uri/path-divergance
+            (h-uri/path-divergence
               public-uri
               (h-uri/path
                 (vec (rest (get-in match [:attrs uri-attr]))))))))

@@ -6,7 +6,7 @@
 
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [enlive "1.1.5"]
-                 [org.vlacs/helmsman "0.1.9"]]
+                 [org.vlacs/helmsman "0.1.10"]]
 
   :pedantic? :warn
 
