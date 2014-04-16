@@ -28,6 +28,7 @@
   "timber/templates/base.html"
   [{:keys [page-name asset-uri-path user-name main-menu user-menu page-content] :as opts}]
   select/title (html/content page-name)
+  select/brand-title (html/content page-name)
   select/link-asset (asset/transform-link asset-uri-path)
   select/js-asset (asset/transform-script-src asset-uri-path)
   select/main-menu (html/content main-menu)
