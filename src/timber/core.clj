@@ -3,6 +3,10 @@
             [timber.selectors :as select]
             [timber.assets :as asset]))
 
+(def helmsman-assets
+  [^{:id :timber/assets}
+   [:resources "/timber/public" {:root "/timber/public"}]])
+
 (html/defsnippet main-menu
   "timber/templates/base.html"
   select/main-menu
