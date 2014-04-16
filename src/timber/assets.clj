@@ -3,10 +3,12 @@
 
 (defn- new-uri-from-match
   [public-uri match uri-attr]
-  (println public-uri)
-  (println match)
-  (println uri-attr)
-  (conj public-uri (vec (rest (h-uri/path (get-in match [:attrs uri-attr]))))))
+    (conj public-uri
+          (second
+            (h-uri/path-divergance
+              public-uri
+              (h-uri/path
+                (vec (rest (get-in match [:attrs uri-attr]))))))))
 
 (defn transform-link
   "Creates an enlive transformation fn that re-writes link asset URIs."
