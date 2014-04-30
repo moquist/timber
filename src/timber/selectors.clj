@@ -20,4 +20,3 @@
 (def script-template [[:script (html/attr? :template)]])
 
 (def content [:div#content])
-
