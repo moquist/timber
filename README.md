@@ -1,19 +1,14 @@
 # Timber [![Build Status](http://img.shields.io/travis/vlacs/timber/master.svg)](https://travis-ci.org/vlacs/timber?branch=master) [![Coverage](http://img.shields.io/coveralls/vlacs/timber/master.svg)](http://coveralls.io/r/vlacs/timber)
 
-TODO: Brief description
+Timber is a template library designed to keep the user interface uniform across multiple applications.
 
-## Releases and Dependency Information
+## Artifact
 
-* Releases are published to TODO_LINK
-
-* Latest stable release is TODO_LINK
-
-* All released versions TODO_LINK
-
+* Artifacts are published to Clojars
 
 ## Copyright and License
 
-Created by [Mike George](http://mikegeorge.org)
+Created by [Jon Doane](http://github.com/jrdoane) and [Mike George](http://mikegeorge.org)
 
 Copyright © 2014 Virtual Learning Academy Charter School
 
