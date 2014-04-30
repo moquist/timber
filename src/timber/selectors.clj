@@ -20,3 +20,10 @@
 (def script-template [[:script (html/attr? :template)]])
 
 (def content [:div#content])
+
+(defn first-of-type
+  "Searches the template for the first type of specified element"
+  [type template]
+  (html/select
+    (html/html-resource (str "timber/templates/" template))
+    [[type (html/nth-of-type 1)]]))
