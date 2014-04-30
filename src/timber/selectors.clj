@@ -1,6 +1,10 @@
 (ns timber.selectors
   (:require [net.cgrand.enlive-html :as html]))
 
+(def html [:html])
+(def head [:head])
+(def body [:body])
+
 (def title [:title])
 
 (def brand-title [:a#brand])
@@ -16,4 +20,4 @@
 (def script-template [[:script (html/attr? :template)]])
 
 (def content [:div#content])
- 
+
