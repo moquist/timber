@@ -1,4 +1,4 @@
-(defproject org.vlacs/timber "0.1.2"
+(defproject org.vlacs/timber "0.1.7"
   :description "UI Library for VLACS applications"
   :url "http://vlacs.org"
   :license {:name "Eclipse Public License"
