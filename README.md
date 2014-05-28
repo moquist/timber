@@ -1,4 +1,4 @@
-# Timber [![Build Status](http://img.shields.io/travis/vlacs/timber/master.svg)](https://travis-ci.org/vlacs/timber?branch=master) [![Coverage](http://img.shields.io/coveralls/vlacs/timber/master.svg)](http://coveralls.io/r/vlacs/timber)
+# Timber ![Build Status](https://codeship.io/projects/b95ed210-c8a1-0131-efe8-1273abb7643a/status) [![Coverage](http://img.shields.io/coveralls/vlacs/timber/master.svg)](http://coveralls.io/r/vlacs/timber)
 
 Timber is a template library designed to keep the user interface uniform across multiple applications.
 
