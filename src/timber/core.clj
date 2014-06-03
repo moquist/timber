@@ -3,7 +3,7 @@
             [timber.selectors :as select]
             [timber.assets :as asset]))
 
-(def helmsman-assets
+(defn helmsman-assets [_]
   [^{:id :timber/assets}
    [:resources "/timber/public" {:root "/timber/public"}]])
 
