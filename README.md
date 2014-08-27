@@ -1,3 +1,9 @@
+# This project is dead, unfortunately. #
+
+### We're keeping it here as a monument and potential source of inspiration. ###
+
+--
+
 # Timber ![Build Status](https://codeship.io/projects/b95ed210-c8a1-0131-efe8-1273abb7643a/status) [![Coverage](http://img.shields.io/coveralls/vlacs/timber/master.svg)](http://coveralls.io/r/vlacs/timber)
 
 Timber is a template library designed to keep the user interface uniform across multiple applications.
